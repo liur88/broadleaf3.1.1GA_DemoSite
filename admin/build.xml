@@ -19,7 +19,9 @@
     <property file="config/${config.filename}"/>
     <property file="../build.properties"/>
 	
-	<property name="runtime.environment" value="development"/>
+	 <!--development 每次启动都新建表-->
+	<!--<property name="runtime.environment" value="development"/>-->
+	<property name="runtime.environment" value="production"/>
 	
     <target name="jetty-demo">
         <delete dir="war/WEB-INF/lib"/>
